@@ -1,0 +1,15 @@
+# Focus Guardian
+
+A productivity and wellness app that detects burnout patterns and helps users manage focus intelligently.
+
+## Problem
+People suffer from screen fatigue, notification overload, and burnout.
+
+## Solution
+Focus Guardian tracks usage behavior and activates smart focus modes to reduce distractions.
+
+## Tech Stack
+- Python
+- Flask
+- SQLite
+- HTML, CSS, JavaScript

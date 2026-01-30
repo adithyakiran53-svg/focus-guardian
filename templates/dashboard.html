@@ -1,0 +1,27 @@
+<h2>Dashboard</h2>
+
+{% if saved %}
+    <p style="color: green;">Usage saved successfully.</p>
+{% endif %}
+
+
+{% if usage %}
+    <div>
+        <h3>Todays usage</h3>
+        <p><strong>screen time today:</strong> {{usage[0] }} minutes</p>
+    <p><strong>night usage today:</strong> {{usage[1] }} minutes</p>
+    </div>
+{% else %}
+    <p>no usage data found for today ngg.</p>
+{% endif %}
+
+
+<hr>
+
+<h3>Add todays usage nigga</h3>
+
+<form action="/add_usage" method="POST">
+    <input type="number" name="screen_time" placeholder="screen time ( min )" required>
+    <input type="number" name="night_usage" placeholder="night usage ( min )" required>
+    <button type="submit">save</button>
+</form>
