@@ -13,3 +13,13 @@ Focus Guardian tracks usage behavior and activates smart focus modes to reduce d
 - Flask
 - SQLite
 - HTML, CSS, JavaScript
+
+## How to Run Locally
+
+```bash
+git clone https://github.com/yourusername/focus-guardian.git
+cd focus-guardian
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
